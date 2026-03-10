@@ -107,15 +107,18 @@
           </div>
         </div>
 
-        <!-- Right: Hero Image -->
-        <div class="anim-3 flex items-stretch justify-center lg:justify-end">
-          <img src="HERO.png" alt="Exact Benefits Group" class="w-full h-full object-contain object-center drop-shadow-2xl" style="transform: scale(1.75) translateX(5%); transform-origin: center center;">
-        </div>
+        <!-- Right: Spacer (image is absolutely positioned at section level) -->
+        <div class="hidden lg:block" aria-hidden="true"></div>
 
       </div>
     </div>
 
-    <div class="relative" style="height: 60px;">
+    <!-- Hero Image: absolutely positioned flush to bottom of hero, behind wave -->
+    <div class="absolute bottom-0 right-0 hidden lg:flex items-end justify-end" style="width: 50%; height: 100%; z-index: 1; pointer-events: none;">
+      <img src="Hero Headshot.png" alt="Exact Benefits Group" class="drop-shadow-2xl" style="height: calc(100% - 72px); max-height: 600px; width: auto; object-fit: contain; object-position: bottom right;">
+    </div>
+
+    <div class="relative" style="height: 60px; z-index: 2;">
       <svg class="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 60" preserveAspectRatio="none" fill="none">
         <path d="M0 60 L1440 60 L1440 0 Q720 60 0 0 Z" fill="white"/>
       </svg>
