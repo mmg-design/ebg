@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where node)",
+      "Bash(where python3.exe)",
+      "Bash(where py)",
+      "Bash(where npx.cmd)",
+      "Bash(where npm.cmd)",
+      "Read(//c/Users/Clark/AppData/Roaming/**)",
+      "Bash(powershell -Command \"Get-Command node -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source; Get-Command python -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source; Get-Command npx -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Users\\\\Clark\\\\AppData\\\\Local'' -Filter ''Python*'' -Directory 2>$null | Select-Object FullName; Get-ChildItem ''C:\\\\Program Files'' -Filter ''*node*'' -Directory 2>$null | Select-Object FullName\")",
+      "Bash(powershell -Command \"dir ''C:\\\\Users\\\\Clark\\\\AppData\\\\Local'' -Filter ''Python*'' | ft FullName\")",
+      "Bash(powershell -Command \"[System.Environment]::GetEnvironmentVariable\\(''PATH'', ''User''\\)\")",
+      "Bash(powershell -Command \"Get-Command Invoke-WebRequest -ErrorAction SilentlyContinue | Select-Object Name; Get-WindowsOptionalFeature -Online -FeatureName IIS-WebServerRole 2>$null | Select-Object State\")",
+      "Bash(php --version)",
+      "Bash(powershell -Command \"php -v\")",
+      "Bash(powershell -Command \"\\(Get-Command php -ErrorAction SilentlyContinue\\).Source\")",
+      "Bash(powershell -Command \":*)",
+      "Bash(kill %1)",
+      "Bash(where powershell)",
+      "Bash(powershell -Command \"Write-Output ''test''\")",
+      "Bash(powershell -Command \"Get-Process | Where-Object { $_.Name -eq ''powershell'' } | Stop-Process -Force\")",
+      "Bash(curl -s http://localhost:3000/ -o /dev/null -w \"%{http_code}\")",
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }\")",
+      "Bash(powershell -Command \"netstat -ano | findstr '':3000''\")",
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }\")"
+    ]
+  }
+}
