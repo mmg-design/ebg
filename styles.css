@@ -212,9 +212,9 @@ html {
   background: repeating-linear-gradient(
     -52deg,
     transparent 0px,
-    transparent 5px,
-    rgba(0,0,0,0.38) 5px,
-    rgba(0,0,0,0.38) 10px
+    transparent 4px,
+    rgba(0,0,0,0.10) 4px,
+    rgba(0,0,0,0.10) 5px
   );
   mix-blend-mode: multiply;
   pointer-events: none;
