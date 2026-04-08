@@ -90,11 +90,11 @@ html {
   will-change: transform;
 }
 .hero-logo-right {
-  width: 840px;
-  height: 840px;
-  bottom: -80px;
-  right: -40px;
-  opacity: 0.88;
+  width: 700px;
+  height: 700px;
+  bottom: -160px;
+  right: -100px;
+  opacity: 0.78;
   mix-blend-mode: overlay;
   filter: blur(3px);
   animation: logoDriftRight 24s ease-in-out infinite;
@@ -223,7 +223,7 @@ html {
   transition: all 0.2s ease;
 }
 .btn-white-grad:hover {
-  background: linear-gradient(158deg, #81c2b8 0%, #5da89e 100%);
+  background: linear-gradient(158deg, #008471 0%, #005f50 100%);
   color: white !important;
   transform: translateY(-2px);
 }
