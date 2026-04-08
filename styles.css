@@ -200,25 +200,6 @@ html {
   }
 }
 
-/* --- Hero striped word treatment --- */
-.hero-striped-word {
-  position: relative;
-  display: inline;
-}
-.hero-striped-word::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    -52deg,
-    transparent 0px,
-    transparent 4px,
-    rgba(0,0,0,0.03) 4px,
-    rgba(0,0,0,0.03) 5px
-  );
-  mix-blend-mode: multiply;
-  pointer-events: none;
-}
 
 /* --- Animations --- */
 @keyframes slideUp {
