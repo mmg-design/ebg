@@ -100,13 +100,12 @@ html {
   will-change: transform;
 }
 .hero-logo-right {
-  width: 700px;
-  height: 700px;
-  bottom: -160px;
-  right: -100px;
-  opacity: 0.45;
-  mix-blend-mode: overlay;
-  filter: blur(10px);
+  width: 420px;
+  height: 420px;
+  bottom: -80px;
+  right: -60px;
+  opacity: 0.08;
+  filter: blur(16px);
   animation: logoDriftRight 24s ease-in-out infinite;
 }
 .hero-logo-left {
@@ -120,13 +119,12 @@ html {
   animation: logoDriftLeft 24s ease-in-out infinite;
 }
 .hero-logo-topleft {
-  width: 300px;
-  height: 300px;
-  top: -50px;
-  left: -40px;
-  opacity: 0.18;
-  mix-blend-mode: overlay;
-  filter: blur(12px);
+  width: 220px;
+  height: 220px;
+  top: -30px;
+  left: -30px;
+  opacity: 0.05;
+  filter: blur(14px);
   animation: logoDriftLeft 30s ease-in-out infinite;
 }
 /* --- Hero background blobs --- */
@@ -193,12 +191,12 @@ html {
 /* --- Mobile: fade out hero logo marks --- */
 @media (max-width: 768px) {
   .hero-logo-right {
-    opacity: 0.15;
-    filter: blur(10px);
+    opacity: 0.04;
+    filter: blur(18px);
   }
   .hero-logo-topleft {
-    opacity: 0.15;
-    filter: blur(10px);
+    opacity: 0.03;
+    filter: blur(18px);
   }
 }
 
