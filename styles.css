@@ -170,6 +170,18 @@ html {
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
+/* --- Mobile: fade out hero logo marks --- */
+@media (max-width: 768px) {
+  .hero-logo-right {
+    opacity: 0.15;
+    filter: blur(10px);
+  }
+  .hero-logo-topleft {
+    opacity: 0.15;
+    filter: blur(10px);
+  }
+}
+
 /* --- Animations --- */
 @keyframes slideUp {
   from { transform: translateY(18px); }
