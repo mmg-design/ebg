@@ -80,6 +80,54 @@ html {
   background-size: 40px 40px;
 }
 
+/* --- Hero animated orbs --- */
+.hero-orb {
+  border-radius: 50%;
+  filter: blur(72px);
+  will-change: transform;
+}
+.hero-orb-1 {
+  width: 520px;
+  height: 520px;
+  top: -120px;
+  left: -80px;
+  background: radial-gradient(circle, rgba(0,132,113,0.28) 0%, transparent 70%);
+  animation: orbDrift1 18s ease-in-out infinite;
+}
+.hero-orb-2 {
+  width: 400px;
+  height: 400px;
+  bottom: -100px;
+  right: 20%;
+  background: radial-gradient(circle, rgba(129,194,184,0.20) 0%, transparent 70%);
+  animation: orbDrift2 22s ease-in-out infinite;
+}
+.hero-orb-3 {
+  width: 300px;
+  height: 300px;
+  top: 30%;
+  right: 10%;
+  background: radial-gradient(circle, rgba(230,245,61,0.10) 0%, transparent 70%);
+  animation: orbDrift3 16s ease-in-out infinite;
+}
+@keyframes orbDrift1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(40px, 30px) scale(1.06); }
+  66%  { transform: translate(-20px, 50px) scale(0.97); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+@keyframes orbDrift2 {
+  0%   { transform: translate(0, 0) scale(1); }
+  40%  { transform: translate(-50px, -30px) scale(1.08); }
+  70%  { transform: translate(30px, -50px) scale(0.95); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+@keyframes orbDrift3 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(-30px, 40px) scale(1.1); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
 /* --- Animations --- */
 @keyframes slideUp {
   from { transform: translateY(18px); }
