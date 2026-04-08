@@ -86,6 +86,16 @@ html {
   opacity: 0.18;
   mix-blend-mode: overlay;
 }
+.hero-texture {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255,255,255,0.031) 0px,
+    rgba(255,255,255,0.031) 1px,
+    transparent 1px,
+    transparent 9px
+  );
+  mix-blend-mode: overlay;
+}
 .hero-logo-accent {
   will-change: transform;
 }
@@ -98,6 +108,16 @@ html {
   mix-blend-mode: overlay;
   filter: blur(10px);
   animation: logoDriftRight 24s ease-in-out infinite;
+}
+.hero-logo-left {
+  width: 700px;
+  height: 700px;
+  bottom: -160px;
+  left: -100px;
+  opacity: 0.45;
+  mix-blend-mode: overlay;
+  filter: blur(10px);
+  animation: logoDriftLeft 24s ease-in-out infinite;
 }
 .hero-logo-topleft {
   width: 300px;
